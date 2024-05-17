@@ -1,0 +1,48 @@
+{
+    "characteristics" : [
+        {
+            "id": 1,
+            "description": "Almacenamiento en la nube"
+        },
+        {
+            "id": 2,
+            "description": "Capacidad xxGb cada cuenta de correo"
+        },
+        {
+            "id": 3,
+            "description": "Acceso Webmail"
+        },
+        {
+            "id": 4,
+            "description": "Libreta de contactos"
+        },
+        {
+            "id": 5,
+            "description": "Multi dispositivos"
+        },
+        {
+            "id": 6,
+            "description": "Compatible con otros programas, acceso POP3 IMAP"
+        },
+        {
+            "id": 7,
+            "description": "Multi plataforma (Windows, Linux, Max, Android, IOS)"
+        },
+        {
+            "id": 8,
+            "description": "Dominio .com gratuito el 1er año"
+        },
+        {
+            "id": 9,
+            "description": "Reenvio de correos automatico"
+        },
+        {
+            "id": 10,
+            "description": "Proteccion antivirus"
+        },
+        {
+            "id": 11,
+            "description": "Antispam"
+        }
+    ]
+}

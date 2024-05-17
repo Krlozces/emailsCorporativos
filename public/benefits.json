@@ -1,0 +1,34 @@
+{
+    "benefits":[
+        {
+            "id": 1,
+            "title": "Correo en la nube",
+            "content": "No importa en que lugar de encuentres. Asimismo, podrás acceder a tus correos corporativos desde cualquier dispositivo y/o navegador web para comunicarte."
+        },
+        {
+            "id":2,
+            "title": "Antivirus & Antispam",
+            "content": "Tu correo empresarial cuenta con filtrado antispam y antivirus que monitorean todos los mensajes recibidos y enviados para que estés protegido en todo momento."
+        },
+        {
+            "id":3,
+            "title": "Certificado SSL",
+            "content": "Todos tus datos serán protegidos gracias a nuestro certificado SSL. Además, el cual garantiza la encriptación de los correos electrónicos para una mayor seguridad."
+        },
+        {
+            "id": 4,
+            "title": "Calendarios y Agenda",
+            "content": "Mantenga todo organizado con Calendarios en la nube. Asimismo, eventos y reuniones que puede combinar con videoconferencias."
+        },
+        {
+            "id": 5,
+            "title": "Compatibles con móviles",
+            "content": "Su correo es compatible con Android o iOS. Además puede vincular su correo en otros dispositivos: Laptops, tables y pc."
+        },
+        {
+            "id": 6,
+            "title": "Asistencia 24/7",
+            "content": "Los equipos de asistencia locales siempre están disponibles para ofrecer ayuda y asesoramiento por teléfono, correo electrónico o chat."
+        }
+    ]
+}

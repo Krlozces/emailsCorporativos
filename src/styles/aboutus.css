@@ -1,0 +1,40 @@
+.contenedor-slides{
+    margin: 10px auto;
+    width: 450px;
+    padding:2;
+}
+
+.card{
+    border-radius: 0.5rem;
+    background-color: aliceblue;
+    color: black;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 4px solid #031b4e;
+}
+
+.title{
+    font-size: 1.5rem/* 24px */;
+    line-height: 2rem/* 32px */;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+}
+
+.titulo-contenedor{
+    margin: 40px 0;
+    width: 100%;
+    border-top: 4px solid #FDF3F3;
+    background-color: transparent;
+    padding: 10px;
+}
+
+@media (max-width: 768px) { 
+    .contenedor-slides{
+        width: 355px;
+        padding:2px;
+    }
+}

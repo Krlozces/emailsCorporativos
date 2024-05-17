@@ -1,0 +1,61 @@
+/* crear variable para el color */
+:root {
+    --primary-color: #3498db;
+    --text-color: #FEFEFE;
+}
+
+.container-footer{
+    /* background-color: #031b4e; */
+    background-color: #017BE8;
+    color: var(--text-color);
+    padding: 2rem 0;
+}
+
+.container-footer-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-spacing{
+    padding: 1rem 0 2rem 0;
+}
+
+.footer-title{
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px 0;
+}
+
+.footer-list{
+    list-style-type: none;
+}
+
+.footer-list>li>a{
+    text-decoration: none;
+    color: #CCC;
+}
+
+.footer-list>li>a:hover{
+    color: var(--text-color);
+    border-bottom: none;
+}
+
+.icon-footer{
+    font-size: 35px;
+}
+
+.span-footer{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+@media (max-width: 768px) { 
+    .container-footer-flex{
+        flex-direction: column;
+    }
+
+    .container-spacing{
+        padding: 1rem 0 1rem 0;
+    }
+}

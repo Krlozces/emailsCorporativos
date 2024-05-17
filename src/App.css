@@ -1,0 +1,50 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  text-align: center;
+  background-color: #FEF6F3;
+}
+
+section{
+  background-color: #017BE8;
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  margin: 40px 0;
+}
+
+.cabecera{
+  background-color: white;
+  width: 100%;
+  margin: 20px 0;
+  padding: 20px 0;
+  border-top: 4px solid #031b4e;
+}
+
+.cabecera-questions{
+  background-color: #031b4e;
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  margin: 20px 0;
+  border-top: 4px solid yellow;
+}
+
+.whatsapp{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #25D366;
+  border-radius: 60%;
+}
+
+.whatsapp:hover{
+  background-color: green;
+}
