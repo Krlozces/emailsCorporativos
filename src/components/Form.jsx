@@ -36,7 +36,7 @@ export default function Form() {
                 <div className='right-container'>
                     <h2>Muestra El Nombre De Tu Negocio En Tus Correos</h2>
                     <p>Para aumentar la confianza de los clientes, ahora puedes enviar tus email mostrando el nombre de tu negocio, o, el nombre que quieras de manera personalizada.</p>
-                    <span>Registralo y activalo en solo 1 minuto,</span><span style={{color: "yellow"}}> ¡Super rapido! </span>
+                    <span>Registralo y activalo,</span><span style={{color: "yellow"}}> ¡Super rapido! </span>
                     <div className='btn-form'>
                         <a href="#" >Empezar ahora</a>
                     </div>
