@@ -1,45 +1,48 @@
 /* CARD STYLES */
 .container-card{
-    overflow-y: auto; 
-    overflow-x: hidden; 
-    /* position: fixed;  */
-    top: 0; 
-    right: 0; 
-    left: 0; 
-    z-index: 50; 
+    overflow-y: auto;
+    overflow-x: hidden;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50;
     display: flex;
-    justify-content: center; 
-    align-items: center; 
-    width: 100%; 
-    max-height: 100%; 
-    height: calc(100%-1rem);
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-height: 100%;
+    height: calc(100% - 1rem);
+    padding: 0.5rem;
+    transition: transform 0.3s;
+    margin: 0 20px;
 }
 
 .container-card:hover{
-    transition: transform 0.23s;
-    transform: scaleY(1.1);
+    transform: scale(1.02);
 }
 
 .sub-container{
     position: relative; 
-    padding: 1rem; 
+    padding: 0.5rem; 
     width: 100%; 
-    /* max-width: 28rem;  */
+    max-width: 28rem; 
     max-height: 100%; 
+    overflow-x: hidden;
 }
 
 .content-container{
+    overflow-x: hidden;
     position: relative; 
-    background-color: #ffffff; 
-    border-radius: 0.5rem; 
-    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.2); 
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.2);
     border-top: 2px solid blue;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .content-container:hover{
-    cursor: grab;
-    box-shadow: -8px 13px 32px 0px rgba(158,143,143,0.75);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .header-container{
@@ -106,6 +109,20 @@
     height: 0.75rem; 
 }
 
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: blue;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s; /* Suavizar la transición */
+}
+
+.button:hover {
+    background-color: darkblue; /* Cambio de color al pasar el cursor */
+}
+
 .button{
     background-color: #005CE1;
     color: #FFFFFF;
@@ -139,10 +156,24 @@
     padding: 20px;
 }
 
+.list-container li{
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+}
+
 .items{
     margin: 3px 0;
 }
 
 .footer-container{
     padding: 1rem;
+}
+
+.item-description{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 0.4rem;
+    /* border-radius: 0.5rem; */
+    border-bottom: 1px solid #005CE1;
 }
