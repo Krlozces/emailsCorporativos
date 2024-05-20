@@ -38,4 +38,9 @@
         width: 355px;
         padding:2px;
     }
+
+    .card{
+        padding: 20px;
+        height: auto;
+    }
 }
