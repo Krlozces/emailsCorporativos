@@ -9,11 +9,11 @@ export default function Form() {
             <div className='container-space-around'>
                 <form action="#" method="POST" className='left-container'>
                     <div className='input-group'>
-                        <label htmlFor="dni">DNI</label>
-                        <input type="text" name="dni" id="dni" placeholder='00000000' />
-                    
                         <label htmlFor="nombre">NOMBRE</label>
                         <input type="text" name="nombre" id="nombre" />
+
+                        <label htmlFor="dni">DNI</label>
+                        <input type="text" name="dni" id="dni" placeholder='00000000' />
 
                         <label htmlFor="telefono">TELEFONO</label>
                         <input type="tel" name="telefono" id="telefono" />
@@ -27,7 +27,7 @@ export default function Form() {
                         <label htmlFor="asunto">ASUNTO</label>
                         <input type="text" name="asunto" id="asunto" placeholder='CORREO CORPORATIVO' />
                     
-                        <label htmlFor="contenido">CONTENIDO</label>
+                        <label htmlFor="contenido">COMENTARIO</label>
                         <textarea name="contenido" id="contenido" cols="30" rows="10" placeholder='Me gustaría...'></textarea> 
 
                         <button type="submit">Contactar</button>
