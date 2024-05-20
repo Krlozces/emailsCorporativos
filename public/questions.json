@@ -3,12 +3,12 @@
         {
             "id": 1,
             "question": "¿Qué son los correos corporativos?",
-            "answer": "Los correos corporativos son cuentas de correo electrónico que se encuentran bajo un dominio de una empresa privada. Además, no están asociadas a dominios públicos como por ejemplo Hotmail o Gmail. Sin embargo, un email corporativo normalmente se compone del nombre del usuario seguido de una arroba y el nombre del dominio. "
+            "answer": "Los correos corporativos son cuentas de correo electrónico que se encuentran bajo un dominio de una empresa privada. Además, no están asociadas a dominios públicos como por ejemplo Hotmail o Gmail. Sin embargo, un email corporativo normalmente se compone del nombre del usuario seguido de una arroba y el nombre del dominio de la empresa. "
         },
         {
             "id": 2,
             "question": "¿Cuál es el precio para comprar emails corporativos?",
-            "answer": "Un email corporativo ayuda a la empresa a mostrar seguridad y confianza hacia sus clientes y los interesados en serlo. Por ello, un correo corporativo o email empresarial es un correo personalizado para la empresa y con mejor capacidad de envío. Además, su precio puede variar entre S/. 199.00 y S/.399 con renovación anual."
+            "answer": "Un correo electrónico corporativo no solo mejora la imagen profesional de tu empresa, sino que también aporta seguridad y confianza a tus clientes y potenciales clientes. Estos correos personalizados ofrecen una capacidad de envío superior y una mayor capacidad de almacenamiento, lo que significa que no tendrás que preocuparte por borrar correos con frecuencia, en comparación con la competencia."
         },
         {
             "id": 3,
@@ -23,12 +23,12 @@
         {
             "id": 5,
             "question": "¿Cómo crear correos corporativos para empresas?",
-            "answer": "Empieza a crear direcciones de correos electrónicos de acuerdo a las necesidades de tu empresa. Por ello, teniendo en cuenta puedes crear tus correos desde el área de clientes, en la sección de detalles del servicio. Sin embargo, puedes solicita por Whtsapp la creación de tus cuentas de empresa, mencionando que eres cliente."
+            "answer": "Empieza a crear direcciones de correos electrónicos de acuerdo a las necesidades de tu empresa. Para ello, aunque no proporcionaremos un área de clientes en este momento, ofreceremos a nuestros clientes la facilidad de administrar la gestión de los correos electrónicos por ellos."
         },
         {
             "id": 6,
             "question": "¿Puedo migrar mi correo corporativo con ustedes?",
-            "answer": "¡Sí! Nosotros nos encargamos de la migración completa desde tu anterior proveedor de correos electrónicos corporativos hacia nosotros. Además, lo hacemos totalmente gratis para nuestros clientes que adquieran el servicio de correo para empresas en Perú."
+            "answer": "¡Sí! Nosotros nos encargamos de la migración completa desde tu anterior proveedor de correos electrónicos corporativos hacia nosotros. Además, lo hacemos totalmente gratis para nuestros clientes que adquieran el servicio de correo para empresas."
         }
     ]
 }
