@@ -7,7 +7,7 @@
     /* background-color: #031b4e; */
     /* background-color: #005CE1; */
     background-color: #2d90de;
-    color: #fff;
+    color: #FFFFFF;
     padding:20px 0 ;
     /* background-color: #6EC1E4; */
 }
@@ -55,6 +55,14 @@ img{
 
 .interlineado{
     padding: 10px 0;
+}
+
+.correo{
+    font-size: 2rem;
+}
+
+.titulo{
+    margin: 0 auto;
 }
 
 @media (max-width: 768px) { 
