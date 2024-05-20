@@ -1,11 +1,17 @@
 import '../styles/footer.css';
 import { Link } from 'react-router-dom';
-
+import LogoPaypal from '../assets/images/paypal.png';
 export default function Footer() {
     return (
         <>
             <div className="container-footer">
                 <div className='container-footer-flex container-spacing'>
+                    <div>
+                        <h2>G-ELECTRON</h2>
+                        <p>RUC</p>
+                        <p>DIRECCION</p>
+                        <p>+51-987654321</p>
+                    </div>
                     <div>
                         <h2>
                             Innovación a tu alcance
@@ -23,16 +29,38 @@ export default function Footer() {
                                 <Link to="/products">Correos corporativos</Link>
                             </li>
                         </ul>
+                        <div>
+                            <h2>
+                                Compañía
+                            </h2>
+                            <ul className='footer-list'>
+                                <li>
+                                    <Link to="/contact">Trabaja con nosotros</Link>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div className='container-footer-flex container-spacing'>
+                    <div>
+                        <h2>Horario de Atención</h2>
+                        <p>Lun - Vie 9:00AM. - 18:00PM.</p>
                     </div>
                     <div>
-                        <h2>
-                            Compañía
-                        </h2>
-                        <ul className='footer-list'>
-                            <li>
-                                <Link to="/contact">Trabaja con nosotros</Link>
-                            </li>
-                        </ul>
+                        <h2>Atención al cliente</h2>
+                        <p>atencion@g-electron.com</p>
+                    </div>
+                    <div>
+                        <h2>Soporte</h2>
+                        <p>soporte@g-electron.com</p>
+                    </div>
+                    <div>
+                        <h2>Formas de pago</h2>
+                        <div className='contenedor-logo'>
+                            <a href="">
+                            <img className='logo-footer' src={LogoPaypal} alt="paypal logo" />
+                            </a>
+                        </div>
                     </div>
                 </div>
                 <hr />
