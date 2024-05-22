@@ -12,25 +12,17 @@ li>a:hover{
     border-bottom: 1px solid #2A629A;
 }
 
-@media (min-width: 768px) {
-    .navbar-nav {
-        display: none;
-    }
-
-    .navbar-toggler {
-        display: none;
-    }
-}
-
 @media (max-width: 768px) {
     .content-navbar{
         display: flex;
         flex-direction: column;
-        width: 50%;
-        position: absolute;
-        left: 190px;
-        top: 50px;
-        background-color: whitesmoke;
+        width: 60%;
+        height:100%;
+        position: fixed;
+        z-index: 550;
+        background-color: #024959;
+        justify-content: space-around;
+        align-items: center;
     }
 
     .navbar-toggler{
@@ -38,11 +30,60 @@ li>a:hover{
     }
 
     .content-navbar li{
-        border-bottom: 1px solid blueviolet;
+        border-bottom: 1px solid #fff;
         width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .content-navbar>li:hover{
         background-color: white;
     }
 }
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.collapse {
+    display: none;
+}
+
+.collapse.show {
+    display: block;
+}
+
+.content-navbar {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-navbar li {
+    margin: 10px 0;
+}
+
+@media (min-width: 768px) {
+    .content-navbar {
+        flex-direction: row;
+    }
+
+    .content-navbar li {
+        margin: 0 10px;
+    }
+
+    .collapse {
+        display: block;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+}
+
