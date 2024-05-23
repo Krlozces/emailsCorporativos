@@ -3,6 +3,7 @@ import '../styles/navbar.css';
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 export default function NavBar() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,16 +29,44 @@ export default function NavBar() {
                         </h2>
                     </li>
                     <li>
-                        <Link to="/products">Planes y servicios</Link>
+                        <ScrollLink 
+                            to="products"
+                            smooth={true}
+                            duration={500}
+                            onClick={toggleMenu}
+                        >
+                            Planes y servicios
+                        </ScrollLink>
                     </li>
                     <li>
-                        <Link to="/questions">Preguntas frecuentes</Link>
+                        <ScrollLink 
+                            to="questions"
+                            smooth={true}
+                            duration={500}
+                            onClick={toggleMenu}
+                        >
+                            Preguntas frecuentes
+                        </ScrollLink>
                     </li>
                     <li>
-                        <Link to="/benefits">Beneficios</Link>
+                        <ScrollLink 
+                            to="benefits"
+                            smooth={true}
+                            duration={500}
+                            onClick={toggleMenu}
+                        >
+                            Beneficios
+                        </ScrollLink>
                     </li>
                     <li>
-                        <Link to="/contact">Contactar</Link>
+                        <ScrollLink 
+                            to="contact"
+                            smooth={true}
+                            duration={500}
+                            onClick={toggleMenu}
+                        >
+                            Contactar
+                        </ScrollLink>
                     </li>
                 </ul>
             </div>

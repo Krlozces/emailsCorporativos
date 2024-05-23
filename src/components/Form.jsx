@@ -5,7 +5,7 @@ export default function Form() {
     return (
         <>
         <h2 className='cabecera'>¡Es hora de trabajar juntos!</h2>
-        <section>
+        <section className='seccion'>
             <div className='container-space-around'>
                 <form action="#" method="POST" className='left-container'>
                     <div className='input-group'>

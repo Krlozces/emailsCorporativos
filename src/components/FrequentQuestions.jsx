@@ -6,9 +6,7 @@ import Footer from './Footer'
 export default function FrequentQuestions() {
     return (
         <>
-            <NavBar />
             <Questions />
-            <Footer />
         </>
     )
 }

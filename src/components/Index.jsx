@@ -10,10 +10,18 @@ export default function Index() {
     return (
         <>
             <Header />
-            <Content />
-            <Benefits />
-            <Questions />
-            <Form />
+            <section id='products'>
+                <Content />
+            </section>
+            <section id='benefits'>
+                <Benefits />
+            </section>
+            <section id='questions'>
+                <Questions />
+            </section>
+            <section id='contact'>
+                <Form />
+            </section>
             <Footer />
             <Whatsapp />
         </>

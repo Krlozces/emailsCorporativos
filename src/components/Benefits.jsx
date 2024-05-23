@@ -17,7 +17,7 @@ export default function Benefits() {
                     Te mostraremos algunos de los beneficios que incluirá tu plan de correos corporativos para tu empresa.
                 </p>
             </div>
-            <section>
+            <section className='seccion'>
             <div className='grid-container'>
                 {benefits.map((item,index) => (
                     <CardBenefits 
