@@ -1,7 +1,7 @@
 import '../styles/main.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChartLine, faLock } from '@fortawesome/free-solid-svg-icons';
-import { Link } from 'react-router-dom';
+import { Link as ScrollLink } from 'react-scroll';
 
 export default function Main() {
     return (
@@ -23,7 +23,7 @@ export default function Main() {
                     </li>
                 </ul>
                 <div className='buttons-space'>
-                    <Link to="/products" className='buttons'>Ver planes de correos</Link>
+                    <ScrollLink to="products" smooth={true} duration={500} className='buttons'>Ver planes de correos</ScrollLink>
                 </div>
                 <span className='parrafo2'>Puedes realizar una consulta gratuita, contáctanos sin compromiso!!!</span>
             </div>

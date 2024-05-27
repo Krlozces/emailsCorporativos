@@ -1,6 +1,6 @@
 import '../styles/footer.css';
-import { Link } from 'react-router-dom';
 import LogoPaypal from '../assets/images/paypal.png';
+import { Link as ScrollLink } from 'react-scroll';
 export default function Footer() {
     return (
         <>
@@ -26,7 +26,7 @@ export default function Footer() {
                         </h2>
                         <ul className='footer-list'>
                             <li>
-                                <Link to="/products">Correos corporativos</Link>
+                                <ScrollLink to="products" smooth={true} duration={500}>Correos corporativos</ScrollLink>
                             </li>
                         </ul>
                         <div>
@@ -35,7 +35,7 @@ export default function Footer() {
                             </h2>
                             <ul className='footer-list'>
                                 <li>
-                                    <Link to="/contact">Trabaja con nosotros</Link>
+                                    <ScrollLink to="contact" smooth={true} duration={500}>Trabaja con nosotros</ScrollLink>
                                 </li>
                             </ul>
                         </div>
