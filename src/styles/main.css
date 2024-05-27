@@ -63,6 +63,14 @@ img{
 
 .titulo{
     margin: 0 auto;
+    text-align: center;
+}
+
+.contenedor-responsive{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 @media (max-width: 768px) { 
