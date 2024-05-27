@@ -58,13 +58,13 @@ li>a:hover{
     display: block;
 }
 
-.content-navbar {
+/* .content-navbar {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
     flex-direction: column;
-}
+} */
 
 .content-navbar li {
     margin: 10px 0;
@@ -87,4 +87,3 @@ li>a:hover{
         display: none;
     }
 }
-

@@ -117,11 +117,11 @@
     color: #fff;
     text-decoration: none;
     border-radius: 0.25rem;
-    transition: background-color 0.3s; /* Suavizar la transición */
+    transition: background-color 0.3s;
 }
 
 .button:hover {
-    background-color: darkblue; /* Cambio de color al pasar el cursor */
+    background-color: darkblue;
 }
 
 .button{
@@ -137,8 +137,6 @@
 }
 
 .button:hover{
-    /* transition: transform 0.23s;
-    transform: scale(1.1); */
     color: #FFF;
     box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
 -webkit-box-shadow: 10px 10px 26px 0px rgba(0,0,0,0.75);
@@ -172,9 +170,7 @@
 }
 
 .item-description{
-    /* border: 1px solid black; */
     width: 100%;
     padding: 0.4rem;
-    /* border-radius: 0.5rem; */
     border-bottom: 1px solid #005CE1;
 }
