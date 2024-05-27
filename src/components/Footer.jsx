@@ -1,6 +1,7 @@
 import '../styles/footer.css';
 import LogoPaypal from '../assets/images/paypal.png';
 import { Link as ScrollLink } from 'react-scroll';
+import LogoYape from '../assets/images/yape.png';
 export default function Footer() {
     return (
         <>
@@ -8,8 +9,8 @@ export default function Footer() {
                 <div className='container-footer-flex container-spacing'>
                     <div>
                         <h2>G-ELECTRON</h2>
-                        <p>RUC</p>
-                        <p>DIRECCION</p>
+                        <p>2012345678</p>
+                        <p>Mariscal las Heras Nº 393, Lince , Lima-Perú</p>
                         <p>+51-987654321</p>
                     </div>
                     <div>
@@ -56,10 +57,17 @@ export default function Footer() {
                     </div>
                     <div>
                         <h2>Formas de pago</h2>
-                        <div className='contenedor-logo'>
-                            <a href="">
-                            <img className='logo-footer' src={LogoPaypal} alt="paypal logo" />
-                            </a>
+                        <div className='logos-container'>
+                            <div className='contenedor-logo'>
+                                <a href="#">
+                                <img className='logo-footer' src={LogoPaypal} alt="paypal logo" />
+                                </a>
+                            </div>
+                            <div className='contenedor-logo'>
+                                <a href="#">
+                                <img className='logo-footer' src={LogoYape} alt="yape logo" height={80} />
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
