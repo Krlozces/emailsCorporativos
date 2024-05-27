@@ -73,3 +73,9 @@
     /* background-color: #FEFEFE; */
     padding: 0.5rem;
 }
+
+.logos-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
