@@ -60,12 +60,12 @@ export default function Footer() {
                         <div className='logos-container'>
                             <div className='contenedor-logo'>
                                 <a href="#">
-                                <img className='logo-footer' src={LogoPaypal} alt="paypal logo" />
+                                <img className='logo-footer' src={LogoPaypal} alt="paypal logo" loading='lazy' title='PayPal' />
                                 </a>
                             </div>
                             <div className='contenedor-logo'>
                                 <a href="#">
-                                <img className='logo-footer' src={LogoYape} alt="yape logo" height={80} />
+                                <img className='logo-footer' src={LogoYape} alt="yape logo" height={80} loading='lazy' title='YAPE' />
                                 </a>
                             </div>
                         </div>
