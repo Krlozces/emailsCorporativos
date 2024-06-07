@@ -105,3 +105,9 @@ input::placeholder, textarea::placeholder{
         width: 80%;
     }
 }
+
+.error{
+    color: red;
+    text-align: center;
+    margin: 0px;
+}
