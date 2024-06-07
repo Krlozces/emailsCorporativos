@@ -60,6 +60,7 @@ input::placeholder, textarea::placeholder{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 6px;
 }
 
 .left-container{
@@ -110,4 +111,9 @@ input::placeholder, textarea::placeholder{
     color: red;
     text-align: center;
     margin: 0px;
+}
+
+.alerta{
+    width: 40%;
+    margin-left: 30px;
 }
