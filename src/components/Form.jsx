@@ -3,8 +3,7 @@ import '../styles/form.css'
 import AboutUs from './AboutUs'
 import axios from 'axios'
 import Alert from '@mui/material/Alert'
-import emailjs from '@emailjs/browser';
-// import { response } from 'express';
+import { response } from 'express';
 
 export default function Form() {
     const [formData, setFormData] = useState({
@@ -69,34 +68,24 @@ export default function Form() {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-
         const newErrors = validate();
         if (Object.keys(newErrors).length > 0) {
             setErrors(newErrors);
             return;
         }
-        
-        // aquí va el ID del servicio PASO 7
-        const serviceID= '';
-        // aquí va el ID del template PASO 9
-        const templateID= '';
-        // aquí va la llave pública PASO 10
-        const publicKey = '';
+        try {
+            const response = await axios.post('http://localhost:3001/send', {
+                ...formData,
+                _csrf: csrfToken // Incluir el token CSRF en la solicitud
+            }, {
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                withCredentials: true
+            });
 
-        const templateParams = {
-            nombre: formData.nombre, 
-            email: formData.email, 
-            dni: formData.dni, 
-            telefono: formData.telefono, 
-            empresa: formData.empresa, 
-            ruc: formData.ruc, 
-            asunto: formData.asunto, 
-            contenido: formData.contenido
-        };
-
-        emailjs.send(serviceID, templateID, templateParams, publicKey)
-            .then(response => {
-                console.log(response);
+            if (response.status === 200) {
+                console.log('Message sent');
                 resetForm();
                 setAlertSeverity('success');
                 setAlertMessage('Mensaje enviado correctamente');
@@ -104,18 +93,22 @@ export default function Form() {
                     setAlertSeverity('');
                     setAlertMessage('');
                 }, 5000);
-            })
-            .catch(error => {
-                console.log(error);
+            } else {
+                console.log('Error sending message:', response.data);
                 setAlertSeverity('error');
                 setAlertMessage('Error al enviar el mensaje');
                 setTimeout(() => {
                     setAlertSeverity('');
                     setAlertMessage('');
                 }, 5000);
-            });
+            }
+        } catch (error) {
+            console.error('Error:', error);
+            setAlertSeverity('error');
+            setAlertMessage('Hubo un error al enviar el mensaje');
+        }
     };
-
+    
     return (
         <>
         <h2 className='cabecera'>¡Es hora de trabajar juntos!</h2>
