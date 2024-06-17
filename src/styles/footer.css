@@ -58,6 +58,37 @@
     .container-spacing{
         padding: 1rem 0 1rem 0;
     }
+
+    .toggle-content {
+        display: none;
+    }
+    
+    .toggle-header {
+        cursor: pointer;
+    }
+
+    .row-container{
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .right{
+        margin-right: 10px;
+    }
+
+    .left{
+        margin-left: 10px;
+    }
+}
+
+.row-container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.toggle-content.active {
+    display: block;
 }
 
 .contenedor-logo{
