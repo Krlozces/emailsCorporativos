@@ -1,7 +1,7 @@
 import '../styles/card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
-export default function Card({ title, characteristics, price  }) {
+export default function Card({ title, accounts, characteristics, price  }) {
     return (
         <>
             <div className="container-card">
@@ -11,6 +11,7 @@ export default function Card({ title, characteristics, price  }) {
                             <h3 className="title">
                                 { title }
                             </h3>
+                            <span>{ accounts } cuentas de correo</span>
                         </div>
                         <hr />
                         <div className="footer-container">
