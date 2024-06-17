@@ -14,7 +14,14 @@
     padding: 3rem;
     text-align: left;
     margin: 1rem 0;
-    /* border: 1px solid #031b4e; */
+    border: 1px solid #F7F9F2;
+}
+
+.card-benefits-container:hover{
+    transform: scale(1.02);
+    color: black;
+    background-color: #F7F9F2;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 
 .span-icon{
