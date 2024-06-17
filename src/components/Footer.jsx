@@ -30,16 +30,6 @@ export default function Footer() {
                                 <ScrollLink to="products" smooth={true} duration={500}>Correos corporativos</ScrollLink>
                             </li>
                         </ul>
-                        <div>
-                            <h2>
-                                Compañía
-                            </h2>
-                            <ul className='footer-list'>
-                                <li>
-                                    <ScrollLink to="contact" smooth={true} duration={500}>Trabaja con nosotros</ScrollLink>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
                 <div className='container-footer-flex container-spacing'>
