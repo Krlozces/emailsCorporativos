@@ -53,6 +53,7 @@
     border-top-left-radius: 0.25rem;
     border-top-right-radius: 0.25rem; 
     border-bottom-width: 1px; 
+    flex-direction: column;
 }
 
 .precio{
