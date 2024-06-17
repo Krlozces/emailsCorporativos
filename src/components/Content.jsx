@@ -14,9 +14,9 @@ export default function Content() {
                 </p>
             </div>
             <div className='container-cards'>
-                <Card title={"Emprendedor"} characteristics={characteristics} price={10.99} />   
-                <Card title={"Pyme"} characteristics={characteristics} price={20.99} /> 
-                <Card title={"Empresarial"} characteristics={characteristics} price={30.99} /> 
+                <Card title={"Emprendedor"} accounts={20} characteristics={characteristics} price={10.99} />   
+                <Card title={"Pyme"} accounts={50} characteristics={characteristics} price={20.99} /> 
+                <Card title={"Empresarial"} accounts={60} characteristics={characteristics} price={30.99} /> 
             </div>
         </>
     )
