@@ -21,12 +21,12 @@ button:hover{
 }
 
 form{
-    padding: 50px 55px;
+    padding: 50px 30px;
     box-shadow: 0 0 20px rgba(0,0,0,0.2);
     border-radius: 20px;
     text-align: center;
     width: 540px;
-    background-color: #fff;
+    background-color: #FFF;
 }
 
 .input-group{
@@ -43,8 +43,8 @@ label{
 }
 
 input, textarea{
-    padding: 17px 25px;
-    border-radius: 25px;
+    padding: 12px 25px;
+    border-radius: 12px;
     margin-bottom: 20px;
     background-color: #edfff002;
     border: 2px solid #F0F0F1;
@@ -86,6 +86,13 @@ input::placeholder, textarea::placeholder{
     transition: all .3s ease-in-out;
 }
 
+.contact-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
 @media (max-width: 768px) { 
     .container-space-around{
         flex-direction: column;
@@ -105,6 +112,15 @@ input::placeholder, textarea::placeholder{
     .right-container{
         width: 80%;
     }
+
+    .contact-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .errors{
+        width: 100%;
+    }
 }
 
 .error{
@@ -116,4 +132,18 @@ input::placeholder, textarea::placeholder{
 .alerta{
     width: 40%;
     margin-left: 30px;
+}
+
+input:focus, textarea:focus{
+    border: 2px solid #000;
+}
+
+input.filled {
+    background-color: #f1f1f1;
+}
+
+.errors{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
