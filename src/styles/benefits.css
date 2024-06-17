@@ -20,7 +20,7 @@
 .card-benefits-container:hover{
     transform: scale(1.02);
     color: black;
-    background-color: #F7F9F2;
+    background-color: #cdffff;
     box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 
