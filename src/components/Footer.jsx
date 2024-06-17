@@ -2,64 +2,65 @@ import '../styles/footer.css';
 import LogoPaypal from '../assets/images/paypal.png';
 import { Link as ScrollLink } from 'react-scroll';
 import LogoYape from '../assets/images/yape.png';
+import FooterSection from './FooterSection';
 export default function Footer() {
     return (
         <>
             <div className="container-footer">
                 <div className='container-footer-flex container-spacing'>
                     <div>
-                        <h2>G-ELECTRON</h2>
-                        <p>2012345678</p>
-                        <p>Mariscal las Heras Nº 393, Lince , Lima-Perú</p>
-                        <p>+51-987654321</p>
+                        <FooterSection title={'G-ELECTRON'}>
+                            <p>2012345678</p>
+                            <p>Mariscal las Heras Nº 393, Lince , Lima-Perú</p>
+                            <p>+51-987654321</p>
+                        </FooterSection>
+                        <div>
+                            <h2>Horario de Atención</h2>
+                            <p>Lun - Vie 9:00AM. - 18:00PM.</p>
+                        </div>
                     </div>
                     <div>
-                        <h2>
-                            Innovación a tu alcance
-                        </h2>
-                        <p>
-                            Ofrecemos soluciones personalizadas y de la más alta calidad.
-                        </p>
-                    </div>
-                    <div>
-                        <h2>
-                            Servicios
-                        </h2>
-                        <ul className='footer-list'>
-                            <li>
-                                <ScrollLink to="products" smooth={true} duration={500}>Correos corporativos</ScrollLink>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className='container-footer-flex container-spacing'>
-                    <div>
-                        <h2>Horario de Atención</h2>
-                        <p>Lun - Vie 9:00AM. - 18:00PM.</p>
-                    </div>
-                    <div>
-                        <h2>Atención al cliente</h2>
-                        <p>atencion@g-electron.com</p>
-                    </div>
-                    <div>
-                        <h2>Soporte</h2>
-                        <p>soporte@g-electron.com</p>
-                    </div>
-                    <div>
-                        <h2>Formas de pago</h2>
-                        <div className='logos-container'>
-                            <div className='contenedor-logo'>
-                                <a href="#">
-                                <img className='logo-footer' src={LogoPaypal} alt="paypal logo" loading='lazy' title='PayPal' />
-                                </a>
+                        <FooterSection title={'Innovación a tu alcance'}>
+                            <p>
+                                Ofrecemos soluciones personalizadas y de la más alta calidad.
+                            </p>
+                        </FooterSection>
+                        <div className='row-container'>
+                            <div className='right'>
+                                <h2>Atención al cliente</h2>
+                                <p>atencion@g-electron.com</p>
                             </div>
-                            <div className='contenedor-logo'>
-                                <a href="#">
-                                <img className='logo-footer' src={LogoYape} alt="yape logo" height={80} loading='lazy' title='YAPE' />
-                                </a>
+                            <div className='left'>
+                                <h2>Soporte al cliente</h2>
+                                <p>soporte@g-electron.com</p>
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <FooterSection title={'Servicios'}>
+                            <ul className='footer-list'>
+                                <li>
+                                    <ScrollLink to="products" smooth={true} duration={500}>Correos corporativos</ScrollLink>
+                                </li>
+                            </ul>
+                        </FooterSection>
+                        <div>
+                            <h2>Formas de pago</h2>
+                            <div className='logos-container'>
+                                <div className='contenedor-logo'>
+                                    <a href="#">
+                                    <img className='logo-footer' src={LogoPaypal} alt="paypal logo" loading='lazy' title='PayPal' />
+                                    </a>
+                                </div>
+                                <div className='contenedor-logo'>
+                                    <a href="#">
+                                    <img className='logo-footer' src={LogoYape} alt="yape logo" height={80} loading='lazy' title='YAPE' />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
                 <hr />
                 <div className='container-footer-flex'>
