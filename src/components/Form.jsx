@@ -149,7 +149,7 @@ export default function Form() {
                         <textarea name="contenido" id="contenido" cols="30" rows="10" placeholder='Me gustaría...' value={formData.contenido} onChange={handleChange} required></textarea> 
                         {errors.contenido && <span className="error">{errors.contenido}</span>} 
 
-                        <button type="submit">Contactar</button>
+                        <button type="submit">Enviar</button>
                     </div>
                 </form>
                 <div className='right-container'>
