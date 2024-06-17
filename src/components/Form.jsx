@@ -108,6 +108,29 @@ export default function Form() {
             setAlertMessage('Hubo un error al enviar el mensaje');
         }
     };
+
+    useEffect(() => {
+        const inputs = document.querySelectorAll('input');
+    
+        inputs.forEach(input => {
+            const handleInput = () => {
+                if (input.value.trim() !== '') {
+                    input.classList.add('filled');
+                } else {
+                    input.classList.remove('filled');
+                }
+            };
+            input.addEventListener('input', handleInput);
+            
+            if (input.value.trim() !== '') {
+                input.classList.add('filled');
+            }
+    
+            return () => {
+                input.removeEventListener('input', handleInput);
+            };
+        });
+    }, []);
     
     return (
         <>
@@ -116,29 +139,39 @@ export default function Form() {
             <div className='container-space-around'>
                 <form onSubmit={handleSubmit} className='left-container'>
                     <div className='input-group'>
-                        <label htmlFor="nombre">NOMBRE</label>
-                        <input type="text" name="nombre" id="nombre" value={formData.nombre} onChange={handleChange} required />
-                        {errors.nombre && <span className="error">{errors.nombre}</span>}
+                        <div className="contact-container">
+                            <div className='errors'>
+                                <label htmlFor="nombre">NOMBRE</label>
+                                <input type="text" name="nombre" id="nombre" value={formData.nombre} onChange={handleChange} required placeholder='Escribe tu nombre...' />
+                                {errors.nombre && <span className="error">{errors.nombre}</span>}
+                            </div>
 
-                        <label htmlFor="dni">DNI</label>
-                        <input type="text" name="dni" id="dni" placeholder='00000000' value={formData.dni} onChange={handleChange} required />
-                        {errors.dni && <span className="error">{errors.dni}</span>}
+                            <div className='errors'>
+                                <label htmlFor="dni">DNI</label>
+                                <input type="text" name="dni" id="dni" placeholder='00000000' value={formData.dni} onChange={handleChange} required />
+                                {errors.dni && <span className="error">{errors.dni}</span>}
+                            </div>
+                        </div>
 
-                        <label htmlFor="telefono">TELEFONO</label>
-                        <input type="tel" name="telefono" id="telefono" value={formData.telefono} onChange={handleChange} required />
-                        {errors.telefono && <span className="error">{errors.telefono}</span>}
-
-
-                        <label htmlFor="email">EMAIL</label>
-                        <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} required />
-                        {errors.email && <span className="error">{errors.email}</span>}
+                        <div className='contact-container'>
+                            <div className='errors'>
+                                <label htmlFor="telefono">TELEFONO</label>
+                                <input type="tel" name="telefono" id="telefono" value={formData.telefono} onChange={handleChange} required placeholder='Escribe tu teléfono...' />
+                                {errors.telefono && <span className="error">{errors.telefono}</span>}
+                            </div>
+                            <div className='errors'>
+                                <label htmlFor="email">EMAIL</label>
+                                <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} required placeholder='Escribe tu correo electrónico...'/>
+                                {errors.email && <span className="error">{errors.email}</span>}
+                            </div>
+                        </div>
                     
                         <label htmlFor="empresa">EMPRESA</label>
                         <input type="text" name="empresa" id="empresa" value={formData.empresa} onChange={handleChange} required />
                         {errors.empresa && <span className="error">{errors.empresa}</span>}
                         
                         <label htmlFor="ruc">RUC</label>
-                        <input type="text" name="ruc" id="ruc" value={formData.ruc} onChange={handleChange} required />
+                        <input type="text" name="ruc" id="ruc" value={formData.ruc} onChange={handleChange} required placeholder='Escribe tu RUC...' />
                         {errors.ruc && <span className="error">{errors.ruc}</span>}
                     
                         <label htmlFor="asunto">ASUNTO</label>
