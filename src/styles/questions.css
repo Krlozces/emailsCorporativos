@@ -11,7 +11,12 @@
     text-align: left;
     border-radius: 1rem;
     /* background-color: #FEF6F3; */
-    /* border: 1px solid #031b4e; */
+    border: 1px solid #031b4e;
+}
+
+.container-question:hover{
+    transform: scale(1.02);
+    box-shadow: 0 10px 10px rgba(0,0,0,0.2);
 }
 
 .super-container-question{
