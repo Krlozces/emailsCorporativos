@@ -1,7 +1,14 @@
 import '../styles/card.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
+import PayPal from './PayPal';
+import { useState } from 'react';
 export default function Card({ title, accounts, characteristics, price  }) {
+    const [isOpen, setIsOpen] = useState(false);
+    const handleOpen = () => {
+        setIsOpen(true);
+    };
+
     return (
         <>
             <div className="container-card">
@@ -27,9 +34,10 @@ export default function Card({ title, accounts, characteristics, price  }) {
                                 ))}
                             </ul>
                             <div>
-                                <a href="#" className='button'>
+                                <span className='button' onClick={handleOpen}>
                                     Contratar
-                                </a>
+                                </span>
+                                {isOpen && <PayPal />}
                             </div>
                         </div>
                     </div>
