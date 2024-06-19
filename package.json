@@ -19,6 +19,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.5.2",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@mui/material": "^5.15.19",
+    "@paypal/paypal-js": "^8.1.0",
+    "@paypal/react-paypal-js": "^8.5.0",
     "axios": "^1.7.2",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
