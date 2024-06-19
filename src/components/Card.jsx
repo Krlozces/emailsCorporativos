@@ -37,7 +37,7 @@ export default function Card({ title, accounts, characteristics, price  }) {
                                 <span className='button' onClick={handleOpen}>
                                     Contratar
                                 </span>
-                                {isOpen && <PayPal />}
+                                {isOpen && <PayPal price={ price } />}
                             </div>
                         </div>
                     </div>
