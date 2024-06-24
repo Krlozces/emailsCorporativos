@@ -140,13 +140,13 @@ export default function Form() {
                 <form onSubmit={handleSubmit} className='left-container'>
                     <div className='input-group'>
                         <div className="contact-container">
-                            <div className='errors'>
+                            <div className='errors left'>
                                 <label htmlFor="nombre">NOMBRE</label>
                                 <input type="text" name="nombre" id="nombre" value={formData.nombre} onChange={handleChange} required placeholder='Escribe tu nombre...' />
                                 {errors.nombre && <span className="error">{errors.nombre}</span>}
                             </div>
 
-                            <div className='errors'>
+                            <div className='errors right'>
                                 <label htmlFor="dni">DNI</label>
                                 <input type="text" name="dni" id="dni" placeholder='00000000' value={formData.dni} onChange={handleChange} required />
                                 {errors.dni && <span className="error">{errors.dni}</span>}
@@ -154,12 +154,12 @@ export default function Form() {
                         </div>
 
                         <div className='contact-container'>
-                            <div className='errors'>
+                            <div className='errors left'>
                                 <label htmlFor="telefono">TELEFONO</label>
                                 <input type="tel" name="telefono" id="telefono" value={formData.telefono} onChange={handleChange} required placeholder='Escribe tu teléfono...' />
                                 {errors.telefono && <span className="error">{errors.telefono}</span>}
                             </div>
-                            <div className='errors'>
+                            <div className='errors right'>
                                 <label htmlFor="email">EMAIL</label>
                                 <input type="email" name="email" id="email" value={formData.email} onChange={handleChange} required placeholder='Escribe tu correo electrónico...'/>
                                 {errors.email && <span className="error">{errors.email}</span>}
