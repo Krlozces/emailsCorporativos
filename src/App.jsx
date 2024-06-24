@@ -6,6 +6,7 @@ import Index from './components/Index';
 import Contact from './components/Contact';
 import Products from './components/Products';
 import BenefitsPage from './components/BenefitsPage';
+import ChatBot from './components/ChatBot';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Route path='/questions' element={<FrequentQuestions />} />
     </Routes>
     <Whatsapp />
+    <ChatBot />
     </>
   )
 }
