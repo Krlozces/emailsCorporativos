@@ -93,6 +93,14 @@ input::placeholder, textarea::placeholder{
     margin-bottom: 4px;
 }
 
+.left{
+    width: 45%;
+}
+
+.right{
+    width: 45%;
+}
+
 @media (max-width: 768px) { 
     .container-space-around{
         flex-direction: column;
