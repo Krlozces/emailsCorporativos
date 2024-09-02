@@ -1,6 +1,6 @@
 import '../styles/footer.css';
 import LogoPaypal from '../assets/images/paypal.png';
-import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 import LogoYape from '../assets/images/yape.png';
 import FooterSection from './FooterSection';
 export default function Footer() {
@@ -48,14 +48,22 @@ export default function Footer() {
                             <h2>Formas de pago</h2>
                             <div className='logos-container'>
                                 <div className='contenedor-logo'>
-                                    <a href="#">
-                                    <img className='logo-footer' src={LogoPaypal} alt="paypal logo" loading='lazy' title='PayPal' />
-                                    </a>
+                                    <ScrollLink 
+                                        to="products"
+                                        smooth={true}
+                                        duration={500}
+                                    >
+                                        <img className='logo-footer' src={LogoPaypal} alt="paypal logo" loading='lazy' title='PayPal' />
+                                    </ScrollLink>
                                 </div>
                                 <div className='contenedor-logo'>
-                                    <a href="#">
-                                    <img className='logo-footer' src={LogoYape} alt="yape logo" height={80} loading='lazy' title='YAPE' />
-                                    </a>
+                                    <ScrollLink 
+                                        to="products"
+                                        smooth={true}
+                                        duration={500}
+                                    >
+                                        <img className='logo-footer' src={LogoYape} alt="yape logo" height={80} loading='lazy' title='YAPE' />
+                                    </ScrollLink>        
                                 </div>
                             </div>
                         </div>
@@ -65,7 +73,7 @@ export default function Footer() {
                 <hr />
                 <div className='container-footer-flex'>
                     <p className='footer-title'>
-                        @ <span className='span-footer'>2024</span> G-ELECTRON <span className='span-footer'>Todos los derechos reservados</span>
+                        &copy; <span className='span-footer'>2024</span> G-ELECTRON <span className='span-footer'>Todos los derechos reservados</span>
                     </p>
                 </div>
             </div>
