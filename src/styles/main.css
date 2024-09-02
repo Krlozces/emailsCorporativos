@@ -6,7 +6,7 @@
     /* margin:20px  0; */
     /* background-color: #031b4e; */
     /* background-color: #005CE1; */
-    background-color: #2d90de;
+    background-color: #017BE8;
     color: #FFFFFF;
     padding:20px 0 ;
     /* background-color: #6EC1E4; */
@@ -23,6 +23,7 @@
     display: flex;
     justify-content: space-around;
     margin: 10px 0;
+    cursor: pointer;
 }
 
 .buttons:hover{
