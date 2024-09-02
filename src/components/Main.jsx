@@ -7,7 +7,7 @@ export default function Main() {
     return (
         <div className="container-main">
             <div className='contenedor-responsive'>
-                <h2 className='interlineado correo'>Correos corporativos</h2>
+                <h2 className='interlineado correo'>Administración de Correos Corporativos</h2>
                 <h1 className='interlineado titulo'>
                     Expande tu marca con un correo profesional corporativo
                 </h1>
