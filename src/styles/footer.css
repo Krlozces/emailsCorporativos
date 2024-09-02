@@ -23,7 +23,7 @@
 
 .footer-title{
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 14px;
     padding: 10px 0;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .span-footer{
-    font-size: 16px;
+    font-size: 14px;
     font-weight: lighter;
 }
 
@@ -97,6 +97,10 @@
     background-color: #fff;
     display: flex;
     border-radius: 0.5rem;
+}
+
+.contenedor-logo:hover{
+    cursor: pointer;
 }
 
 .logo-footer{
