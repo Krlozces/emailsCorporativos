@@ -18,16 +18,16 @@ export default function Benefits() {
                 </p>
             </div>
             <section className='seccion'>
-            <div className='grid-container'>
-                {benefits.map((item,index) => (
-                    <CardBenefits 
-                        key={item.id} 
-                        icon={icons[index]} 
-                        title={item.title} 
-                        content={item.content} 
-                    />
-                ))}
-            </div>
+                <div className='grid-container'>
+                    {benefits.map((item,index) => (
+                        <CardBenefits 
+                            key={item.id} 
+                            icon={icons[index]} 
+                            title={item.title} 
+                            content={item.content} 
+                        />
+                    ))}
+                </div>
             </section>
         </>
     ) 
