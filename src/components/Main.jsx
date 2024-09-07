@@ -16,10 +16,10 @@ export default function Main() {
                 </p>
                 <ul className='main-list'>
                     <li className='items-space'>
-                        <FontAwesomeIcon icon={faChartLine} /> Promociona tu marca con cada mensaje que envías.
+                        <FontAwesomeIcon icon={faChartLine} /> <span className='parrafo2'>Promociona tu marca con cada mensaje que envías.</span>
                     </li>
                     <li className='items-space'>
-                        <FontAwesomeIcon icon={faLock} /> Maneja tu correo desde cualquier lado, desde cualquier dispositivo.
+                        <FontAwesomeIcon icon={faLock} /> <span className='parrafo2'>Maneja tu correo desde cualquier lado, desde cualquier dispositivo.</span>
                     </li>
                 </ul>
                 <div className='buttons-space'>
