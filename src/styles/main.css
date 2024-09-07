@@ -89,3 +89,13 @@ img{
         margin: 10px auto;
     }
 }
+
+@media (min-width: 768px){
+    .parrafo{
+        font-size: large;
+    }
+
+    .parrafo2{
+        font-size: large;
+    }
+}
