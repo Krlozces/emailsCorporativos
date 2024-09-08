@@ -4,7 +4,6 @@
     grid-gap: 20px;
     margin: 10px 60px;
     justify-content: center;
-    align-items: center;
 }
 
 .card-benefits-container{
@@ -29,6 +28,22 @@
     margin-bottom: 14px;
 }
 
+.yape-btn{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #673AB7;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.yape-btn:hover{
+    background-color: #3d226d;
+}
+
 @media (max-width: 768px) { 
     .grid-container{
         grid-template-columns: repeat(1,1fr);
@@ -38,5 +53,6 @@
 
     .card-benefits-container{
         text-align: center;
+        width: 390px;
     }
 }
