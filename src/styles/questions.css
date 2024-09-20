@@ -4,6 +4,8 @@
     grid-auto-rows: minmax(30px, auto) / 6 ;
     gap: 40px;
     margin: 10px 60px;
+    justify-items: center;
+    align-items: center;
 }
 
 .container-question{
@@ -12,6 +14,7 @@
     border-radius: 1rem;
     /* background-color: #FEF6F3; */
     border: 1px solid #031b4e;
+    width: 37rem;
 }
 
 .container-question:hover{
@@ -32,9 +35,12 @@
         grid-template-columns: repeat(1,1fr);
         gap: 30px;
         margin: 10px 40px;
+        justify-items: center;
+        align-items: center;
     }
 
     .container-question{
         border: 1px solid #031b4e;
+        width: 24rem;
     }
 }
