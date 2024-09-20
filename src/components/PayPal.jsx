@@ -1,6 +1,8 @@
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import axios from "axios";
 import { useState, useEffect } from 'react';
+import '../styles/benefits.css';
+import { Button, Modal } from "flowbite-react";
 
 function PayPal({ price }) {
     const initialOptions = {
@@ -9,6 +11,7 @@ function PayPal({ price }) {
 
     const [csrfToken, setCsrfToken] = useState('');
     const [message, setMessage] = useState("");
+    const [openModalYape, setOpenModalYape] = useState(true);
 
     useEffect(() => {
         axios.get('http://localhost:3001/form', { withCredentials: true })
@@ -60,6 +63,15 @@ function PayPal({ price }) {
             <PayPalScriptProvider options={initialOptions}>
                 <PayPalButtons  createOrder={createOrder} />
             </PayPalScriptProvider>
+            <button className="yape-btn" onClick={() => setOpenModalYape(true)}>YAPE</button>
+            <div style={{ zIndex: '999', width: '40%' }}>
+            <Modal show={openModalYape} onClose={() => setOpenModalYape(false)}>
+                <Modal.Header>Código QR</Modal.Header>
+                <Modal.Body>
+                    <img src="https://tse4.mm.bing.net/th?id=OIP.U1S5NpMGxCdvgw4EJcMuegHaHa&pid=Api" alt="Código QR" />
+                </Modal.Body>
+            </Modal>
+            </div>
         </div>
     )
 }
