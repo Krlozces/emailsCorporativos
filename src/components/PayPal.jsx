@@ -2,7 +2,7 @@ import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import axios from "axios";
 import { useState, useEffect } from 'react';
 import '../styles/benefits.css';
-import { Button, Modal } from "flowbite-react";
+import Modal from 'react-modal';
 
 function PayPal({ price }) {
     const initialOptions = {
@@ -11,7 +11,7 @@ function PayPal({ price }) {
 
     const [csrfToken, setCsrfToken] = useState('');
     const [message, setMessage] = useState("");
-    const [openModalYape, setOpenModalYape] = useState(true);
+    const [openModalYape, setOpenModalYape] = useState(false);
 
     useEffect(() => {
         axios.get('http://localhost:3001/form', { withCredentials: true })
@@ -61,17 +61,33 @@ function PayPal({ price }) {
     return (
         <div>
             <PayPalScriptProvider options={initialOptions}>
-                <PayPalButtons  createOrder={createOrder} />
+                <PayPalButtons  createOrder={createOrder} className="paypal-buttons" />
             </PayPalScriptProvider>
             <button className="yape-btn" onClick={() => setOpenModalYape(true)}>YAPE</button>
-            <div style={{ zIndex: '999', width: '40%' }}>
-            <Modal show={openModalYape} onClose={() => setOpenModalYape(false)}>
-                <Modal.Header>Código QR</Modal.Header>
-                <Modal.Body>
-                    <img src="https://tse4.mm.bing.net/th?id=OIP.U1S5NpMGxCdvgw4EJcMuegHaHa&pid=Api" alt="Código QR" />
-                </Modal.Body>
+            <Modal
+                isOpen={openModalYape}
+                onRequestClose={() => setOpenModalYape(false)}
+                contentLabel="Yape QR Modal"
+                style={{
+                    content: {
+                        top: '50%',
+                        left: '50%',
+                        right: 'auto',
+                        bottom: 'auto',
+                        marginRight: '-50%',
+                        transform: 'translate(-50%, -50%)',
+                        width: '300px',
+                        textAlign: 'center',
+                        zIndex: 55,
+                    },
+                }}
+            >
+                <h2>Código QR de Yape</h2>
+                <img src="https://tse4.mm.bing.net/th?id=OIP.U1S5NpMGxCdvgw4EJcMuegHaHa&pid=Api" alt="Código QR de Yape" style={{ width: '100%', height: 'auto' }} />
+                <button onClick={() => setOpenModalYape(false)}>
+                    Cerrar
+                </button>
             </Modal>
-            </div>
         </div>
     )
 }
