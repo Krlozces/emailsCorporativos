@@ -1,10 +1,16 @@
 import '../styles/content.css';
 import Card from './Card.jsx';
 import carachteristicsData from '../../public/characteristics.json';
+import { useState } from 'react';
 
 export default function Content() {
     const { characteristics } = carachteristicsData;
-
+    const [openCardIndex, setOpenCardIndex] = useState(null);
+    const cards = [
+        { title: "Emprendedor", accounts: 20, price: 10 },
+        { title: "Pyme", accounts: 50, price: 20 },
+        { title: "Empresarial", accounts: 60, price: 30 }
+    ];
     return (
         <>
             <div className='cabecera'>
@@ -14,9 +20,17 @@ export default function Content() {
                 </p>
             </div>
             <div className='container-cards'>
-                <Card title={"Emprendedor"} accounts={20} characteristics={characteristics} price={10} />   
-                <Card title={"Pyme"} accounts={50} characteristics={characteristics} price={20} /> 
-                <Card title={"Empresarial"} accounts={60} characteristics={characteristics} price={30} /> 
+                {cards.map((card, index) => (
+                    <Card
+                        key={index}
+                        title={card.title}
+                        accounts={card.accounts}
+                        characteristics={characteristics}
+                        price={card.price}
+                        isOpen={openCardIndex === index} 
+                        onOpen={() => setOpenCardIndex(openCardIndex === index ? null : index)}
+                    />
+                ))}
             </div>
         </>
     )
