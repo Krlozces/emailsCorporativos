@@ -6,8 +6,7 @@
     justify-content: center;
     align-content: center;
     align-items: center;
-        justify-items: center;
-    width: 90%;
+    justify-items: center;
     margin: 0 auto;
 }
 
@@ -49,6 +48,11 @@
 
 .yape-btn:hover{
     background-color: #3d226d;
+}
+
+/* Asegúrate de que el selector sea lo suficientemente específico para afectar el botón */
+.paypal-buttons {
+    z-index: 0 !important;
 }
 
 @media (max-width: 768px) { 
