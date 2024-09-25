@@ -1,4 +1,4 @@
-import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
+import { PayPalScriptProvider, PayPalButtons, FUNDING } from "@paypal/react-paypal-js";
 import axios from "axios";
 import { useState, useEffect } from 'react';
 import '../styles/benefits.css';
@@ -61,7 +61,7 @@ function PayPal({ price }) {
     return (
         <div>
             <PayPalScriptProvider options={initialOptions}>
-                <PayPalButtons  createOrder={createOrder} className="paypal-buttons" />
+                <PayPalButtons  createOrder={createOrder} className="paypal-buttons" fundingSource={FUNDING.PAYPAL} />
             </PayPalScriptProvider>
             <button className="yape-btn" onClick={() => setOpenModalYape(true)}>YAPE</button>
             <Modal
