@@ -27,6 +27,8 @@
     background-color: #Fff;
     padding: 20px 0;
     margin: 10px 0;
+    display: flex;
+    justify-content: center;
 }
 
 @media (max-width: 768px) { 
