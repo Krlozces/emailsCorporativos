@@ -15,6 +15,16 @@
   width: 100%;
   padding: 20px 0;
   margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.seccion-form{
+  background-color: #017BE8;
+  color: #fff;
+  width: 100%;
+  padding: 20px 0;
+  margin: 40px 0;
 }
 
 .cabecera{
