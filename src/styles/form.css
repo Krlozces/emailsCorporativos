@@ -58,9 +58,10 @@ input::placeholder, textarea::placeholder{
 
 .container-space-around{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin-bottom: 6px;
+    gap: 2rem;
 }
 
 .left-container{
