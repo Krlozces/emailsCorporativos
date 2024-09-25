@@ -65,11 +65,13 @@ input::placeholder, textarea::placeholder{
 }
 
 .left-container{
-    width: 40%;
+    /* width: 40%; */
+    width: 34rem;
 }
 
 .right-container{
-    width: 50%;
+    /* width: 50%; */
+    width: 40rem;
 }
 
 .btn-form{
